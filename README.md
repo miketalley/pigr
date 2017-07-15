@@ -1,4 +1,13 @@
 # TODO
+Allow for multiple commands in one task id
+If task exists, prompt user to update or create new?
+
+
+
+
+
+
+---------------
 Use template to generate node script which runs functions based on parameters
  - Take a picture(only when power is on)
  - Record temperature
