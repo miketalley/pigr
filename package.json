@@ -1,0 +1,25 @@
+{
+  "name": "pigr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miketalley/pigr.git"
+  },
+  "author": "Mike Talley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miketalley/pigr/issues"
+  },
+  "homepage": "https://github.com/miketalley/pigr#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "hs100-api": "^0.4.0",
+    "lodash": "^4.17.4",
+    "sequelize": "^4.3.2"
+  }
+}
