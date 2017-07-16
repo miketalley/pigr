@@ -4,7 +4,6 @@
 // minute hour dayOfMonth month dayOfWeek user command
 // # end task <taskId>
 
-const { exec } = require('child_process');
 const fs = require('fs');
 
 const CRONTAB_FILE_LOCATION = '/etc/crontab';
