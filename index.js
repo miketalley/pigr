@@ -4,14 +4,26 @@
 // minute hour dayOfMonth month dayOfWeek user command
 // # end task <taskId>
 
+const { exec } = require('child_process');
 const fs = require('fs');
 
 const CRONTAB_FILE_LOCATION = '/etc/crontab';
 const CRONTAB_HEADER_START = '# pigr task ';
 const CRONTAB_FOOTER_START = '# end task ';
 const LINE_BREAK = '\r\n';
+const COMMANDS = {
+  photo: 'raspistill -ts -o /images/img_%d.jpg'
+};
+
+addCronTask({
+  id: 0,
+  minute: '*/2',
+  command: 'photo'
+});
 
 function generateCronCommand(opts) {
+  const cronCommand = COMMANDS[opts.command];
+
   return
     opts.minute +
     ' ' +
@@ -25,7 +37,7 @@ function generateCronCommand(opts) {
     ' ' +
     opts.user +
     ' ' +
-    opts.command +
+    cronCommand +
     ';'
 }
 
