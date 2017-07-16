@@ -69,13 +69,13 @@ function addCronTask(opts) {
   const id = opts.id;
 
   if (!id) {
-    throw new Error('Must provide cron task id!');
+    console.error('Must provide cron task id!');
   }
   if (!opts.command) {
-    throw new Error('Must provide command for cron task!');
+    console.error('Must provide command for cron task!');
   }
   if (taskExists(id)) {
-    return throw new Error('Task already exists!');
+    return console.error('Task already exists!');
   }
 
   writeNewCronTask(generateTaskContent(opts));
