@@ -70,8 +70,8 @@ function generateTaskContent(opts) {
   };
   const cronCommandOptions = _.assign({}, defaults, opts);
 
-  const header = generateHeader(id, cronCommandOptions.name);
-  const footer = generateFooter(id);
+  const header = generateHeader(opts.id, cronCommandOptions.name);
+  const footer = generateFooter(opts.id);
   const command = generateCronCommand(cronCommandOptions);
 
   return LINE_BREAK + header + LINE_BREAK + command + LINE_BREAK + footer + LINE_BREAK;
