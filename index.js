@@ -22,9 +22,8 @@ addCronTask({
 });
 
 function generateCronCommand(opts) {
-  const cronCommand = COMMANDS[opts.command];
-
-  return
+  const command = COMMANDS[opts.command];
+  const cronCommand =
     opts.minute +
     ' ' +
     opts.hour +
@@ -37,8 +36,12 @@ function generateCronCommand(opts) {
     ' ' +
     opts.user +
     ' ' +
-    cronCommand +
+    command +
     ';'
+
+  console.log('CC: ', cronCommand);
+  return cronCommand;
+
 }
 
 function writeNewCronTask(content) {
@@ -68,7 +71,10 @@ function generateTaskContent(opts) {
     dayOfWeek: '*',
     user: 'root'
   };
+  console.log('Defaults: ', JSON.stringify(defaults));
+  console.log('Opts: ', JSON.stringify(opts));
   const cronCommandOptions = _.assign({}, defaults, opts);
+  console.log('Cron Opts: ', JSON.stringify(cronCommandOptions));
 
   const header = generateHeader(opts.id, cronCommandOptions.name);
   const footer = generateFooter(opts.id);
