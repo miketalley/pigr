@@ -34,7 +34,7 @@ function writeNewCronTask(content) {
 }
 
 function taskExists(id) {
-  return fs.readFile(CRONTAB_FILE_LOCATION, 'utf-8', (err, contents) => {
+  return fs.readFile(CRONTAB_FILE_LOCATION, 'utf-8', function(err, contents) {
     return contents.indexOf(CRONTAB_HEADER_START + id) !== -1;
   });
 }
