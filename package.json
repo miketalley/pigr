@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/miketalley/pigr#readme",
   "dependencies": {
+    "lodash": "^4.17.4"
   }
 }

@@ -5,6 +5,7 @@
 // # end task <taskId>
 
 const fs = require('fs');
+const _ = require('lodash');
 
 const CRONTAB_FILE_LOCATION = '/etc/crontab';
 const CRONTAB_HEADER_START = '# pigr task ';
