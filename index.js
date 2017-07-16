@@ -16,7 +16,7 @@ const COMMANDS = {
 };
 
 addCronTask({
-  id: 0,
+  id: 1,
   minute: '*/2',
   command: 'photo'
 });
