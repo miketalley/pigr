@@ -68,7 +68,7 @@ function generateTaskContent(opts) {
     dayOfWeek: '*',
     user: 'root'
   };
-  const cronCommandOptions = Object.assign({}, defaults, opts);
+  const cronCommandOptions = _.assign({}, defaults, opts);
 
   const header = generateHeader(id, cronCommandOptions.name);
   const footer = generateFooter(id);
