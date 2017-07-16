@@ -17,9 +17,5 @@
   },
   "homepage": "https://github.com/miketalley/pigr#readme",
   "dependencies": {
-    "express": "^4.15.3",
-    "hs100-api": "^0.4.0",
-    "lodash": "^4.17.4",
-    "sequelize": "^4.3.2"
   }
 }
