@@ -12,7 +12,7 @@ const CRONTAB_HEADER_START = '# pigr task ';
 const CRONTAB_FOOTER_START = '# end task ';
 const LINE_BREAK = '\r\n';
 const COMMANDS = {
-  photo: 'raspistill -o ' + __dirname + '/images/img_\%d.jpg -ts'
+  photo: 'raspistill -o ' + __dirname + '/images/img_\\%d.jpg -ts'
 };
 
 addCronTask({
