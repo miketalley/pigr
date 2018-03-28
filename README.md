@@ -1,4 +1,4 @@
-Pi Garden
+# Pi Garden
 ![alt text](https://slack-imgs.com/?c=1&url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FQhLi1PvRCMxsQ%2Fgiphy.gif)
 
 Status: In progress
