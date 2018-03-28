@@ -6,7 +6,7 @@ Status: In progress
 This app will allow you to monitor your plants using a Raspberri PI.
 
 # Current Features
-Time lapse photography
+ - Time lapse photography
 
 # Future Enhancements
  - Record temperature
